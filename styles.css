@@ -346,53 +346,17 @@ h4 { font-weight: 500; }
     border: 1px solid var(--color-card-border);
 }
 
-/* --- New: Info Block Containers (Dataset Analysis, Library Selection) --- */
-.info-block-card {
-    background-color: var(--color-card-background);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 15px var(--color-shadow);
-    padding: 25px;
-    margin-top: 30px; /* Space between main elements */
-    margin-bottom: 30px; /* Space between main elements */
-    border: 1px solid var(--color-card-border); /* Subtle border for separation */
-}
-
-/* ML Methodology - Spacing Fix */
+/* ML Methodology - SPACING FIXES */
 .ml-subsections {
     display: flex;
     gap: 40px;
-    margin-top: 20px; /* Gap below the main h3/h2 */
+    margin-top: 20px; 
 }
 .ml-subsections .ml-col h3 {
+    margin-top: 30px; /* Ensure spacing above subheadings */
     margin-bottom: 20px;
 }
 
-/* ML Methodology - Applying the block card to Dataset Analysis */
-.dataset-analysis {
-    /* Now using the generic block card class */
-    padding: 0; 
-    box-shadow: none;
-    border: none;
-    background-color: transparent;
-}
-.dataset-analysis h3 {
-    margin-top: 40px; /* Space above dataset analysis heading */
-    margin-bottom: 20px;
-}
-.dataset-analysis .analysis-cards {
-    /* Ensures the card applies to the analysis section content */
-    background-color: var(--color-card-background);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 15px var(--color-shadow);
-    padding: 25px;
-}
-
-/* Implementation Plan - Library List Spacing Fix */
-.library-list {
-    margin-top: 20px;
-}
-
-/* ML Methodology */
 .ml-col {
     flex: 1;
     min-width: 40%;
@@ -409,7 +373,45 @@ h4 { font-weight: 500; }
     z-index: 900; 
 }
 
+/* --- Block Containers (Dataset Analysis, Library Selection) --- */
+.info-block-card {
+    /* Base style for bubble containers */
+    background-color: var(--color-card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px var(--color-shadow);
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-card-border); 
+}
+
+/* Apply block to Dataset Analysis structure */
+.dataset-analysis h3 {
+    margin-top: 30px; 
+}
+
+.dataset-analysis .analysis-cards {
+    background-color: var(--color-card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px var(--color-shadow);
+    padding: 25px;
+    margin-top: 20px; /* Separate block from heading */
+}
+
+/* Apply block to Library Selection structure */
+.implementation-plan-content {
+    background-color: var(--color-card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px var(--color-shadow);
+    padding: 25px;
+    margin-top: 20px;
+}
+
+
 /* Implementation Plan */
+.library-list {
+    margin-top: 20px;
+}
 .library-list li {
     font-weight: 500; 
 }
@@ -427,6 +429,7 @@ h4 { font-weight: 500; }
     white-space: pre-wrap;
     line-height: 1.4;
     box-shadow: 0 4px 15px var(--color-shadow); 
+    margin-top: 20px; /* Space above code block */
 }
 
 /* Evaluation Metrics */
@@ -444,17 +447,6 @@ h4 { font-weight: 500; }
     box-shadow: 0 8px 30px var(--color-shadow);
     border-left: 5px solid var(--color-primary-dark);
     color: var(--color-text-secondary);
-}
-
-.metric-card i {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-}
-
-.metric-card h4 {
-    font-weight: 500; 
-    color: var(--color-primary-dark);
-    margin-bottom: 10px;
 }
 
 /* Conclusion */
