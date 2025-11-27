@@ -217,15 +217,15 @@
         <div class="container fade-in">
             <h2 class="section-title"><i class="fas fa-code icon-purple"></i> 5. Implementation Plan</h2>
             
-            <h3>Library Selection</h3>
-            <ul class="library-list">
-                <li><i class="fas fa-book"></i> <strong>Data Processing:</strong> pyspark (large-scale ETL and aggregation) and pandas (manipulation)</li>
-                <li><i class="fas fa-book"></i> <strong>Modeling:</strong> xgboost (main regressor) and scikit-learn (scaling/splitting)</li>
-                <li><i class="fas fa-book"></i> <strong>Visualization:</strong> matplotlib and seaborn (feature importance/diagnostics)</li>
-            </ul>
+            <div class="implementation-plan-content"> <h3>Library Selection</h3>
+                <ul class="library-list">
+                    <li><i class="fas fa-book"></i> <strong>Data Processing:</strong> pyspark (large-scale ETL and aggregation) and pandas (manipulation)</li>
+                    <li><i class="fas fa-book"></i> <strong>Modeling:</strong> xgboost (main regressor) and scikit-learn (scaling/splitting)</li>
+                    <li><i class="fas fa-book"></i> <strong>Visualization:</strong> matplotlib and seaborn (feature importance/diagnostics)</li>
+                </ul>
 
-            <h3>Pseudo-Code / Logic Flow</h3>
-            <pre class="code-block"><code>
+                <h3>Pseudo-Code / Logic Flow</h3>
+                <pre class="code-block"><code>
 1. LOAD raw transaction data into a PySpark DataFrame.
 2. CLEAN data: Remove canceled invoices, missing CustomerID, or invalid values.
 3. CREATE customer-level features: Group by CustomerID and compute RFM features.
@@ -236,7 +236,8 @@
 8. EVALUATE model: Predict CLV on the test set and calculate evaluation metrics.
 9. INTERPRET results: Analyze feature importance from XGBoost.
 10. DEPLOY: Save the final trained model for production use.
-            </code></pre>
+                </code></pre>
+            </div>
         </div>
     </section>
 
