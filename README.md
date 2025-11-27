@@ -1,12 +1,12 @@
-# 💰 Customer Lifetime Value (CLV) Prediction Pipeline
+# Customer Lifetime Value (CLV) Prediction Pipeline
 
-## 📊 Live Project Report & Visualization
+##  Live Project Report & Visualization
 
 **View the full, interactive website report here:** [https://MuskanAsadInsights.github.io/CLV-Prediction-Pipeline/](https://MuskanAsadInsights.github.io/CLV-Prediction-Pipeline/)
 
 ---
 
-## 📝 Project Summary
+##  Project Summary
 
 This report outlines the design of a complete, end-to-end Big Data Analytics and Machine Learning pipeline for predicting **Customer Lifetime Value (CLV)** in the Retail industry. The project uses large-scale transactional data to forecast the future revenue a customer will generate.
 
@@ -15,7 +15,7 @@ The primary goal is to provide the business with an accurate CLV score per custo
 * Implement **proactive retention** strategies for at-risk, high-value clients.
 * Improve overall resource allocation and profitability.
 
-## ⚙️ Methodology and Architecture
+##  Methodology and Architecture
 
 ### **Core Problem & Data**
 
@@ -38,7 +38,7 @@ The architecture is built for scalability and efficiency, utilizing distributed 
 
 ---
 
-## 🛠️ Key Technologies Used
+##  Key Technologies Used
 
 * **Big Data Framework:** PySpark (Apache Spark)
 * **Modeling:** XGBoost, Scikit-learn
